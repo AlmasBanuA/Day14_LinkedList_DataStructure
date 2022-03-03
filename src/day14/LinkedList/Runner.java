@@ -29,18 +29,16 @@ public class Runner {
 		/*
 		 * UC4. Ability to insert 30 between 56 and 70
 		 */
-		   list.insert(56);
-	       list.insert(70);
-	       list.insertMid(2, 30);
-	       
+		list.insert(56);
+        list.insert(30);
+        list.insert(70);
+        list.print();
+        
+        int pop = list.popAtLast();
+        list.print();
 		/*
 		 * Printing linkedList after adding nodes
 		 */
-		list.print();
-		System.out.println("First element is deleted");
-		int pop = list.popAtFirst();
-        System.out.println(pop);
-        System.out.println("After Deleting first element");
-        list.print();
+	
 	}
 }

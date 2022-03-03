@@ -29,30 +29,7 @@ public class LinkedList {
 			tail.next = newNode;
 			tail = newNode;
 		}
-	}
-
-//	/*
-//	 * creating print method
-//	 */
-//	public void print() {
-//		/*
-//		 * Node current will point to head
-//		 */
-//		MyNode temp = head;
-//		if (head == null) {
-//			System.out.println("List is empty");
-//			return;
-//		}
-//		System.out.println("Nodes of linked list is: ");
-//		while (temp != null) {
-//			/*
-//			 * Prints each node by incrementing pointer
-//			 */
-//			System.out.print(temp.data + " ");
-//			temp = temp.next;
-//		}
-//		System.out.println();
-//	}
+	}	
 
 	/*
 	 * addNode() method here new data is added inFront of data

@@ -27,22 +27,19 @@ public class Runner {
 		LinkedList list = new LinkedList();
 
 		/*
-		 * UC9. Ability to delete 40 from the Linked List sequence of 56->30->40->70
-		 *		and showing the size of LinkedList is 3
+		 * UC10. Ability to create Ordered Linked List in ascending order of data entered
+		 * in following sequence 56, 30, 40,and 70 
+		 * Final Sequence: 30->40->56->70
 		 */
 		list.insert(56);
 		list.insert(30);
 		list.insert(70);
 		list.print();
-
 		list.searchNode(30);
-		/*
-		 * Ability to insert 40 after 30 to the Linked List
-		 */
 		list.insertMid(3, 40);
 		list.print();
-		list.delete(40);
-		list.printSize();
+		list.sortedList();
+		System.out.println("sorted data");
 		list.print();
 
 	}

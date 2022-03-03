@@ -27,18 +27,13 @@ public class Runner {
 		LinkedList list = new LinkedList();
 
 		/*
-		 * UC4. Ability to insert 30 between 56 and 70
+		 * UC7. Ability to search LinkedList to find Node with value 30
 		 */
 		list.insert(56);
-        list.insert(30);
-        list.insert(70);
-        list.print();
-        
-        int pop = list.popAtLast();
-        list.print();
-		/*
-		 * Printing linkedList after adding nodes
-		 */
-	
+		list.insert(30);
+		list.insert(70);
+		list.print();
+		list.searchNode(30);
+
 	}
 }

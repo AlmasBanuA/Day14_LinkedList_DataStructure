@@ -117,4 +117,17 @@ public class LinkedList {
 		 */
 		newNode.next = cur;
 	}
+	/*
+	 *  Creating popAtFirst() delete the first element of the linked list
+	 */
+	public int popAtFirst() {
+		int popData = 0;
+		if (head == null) {
+			System.out.println("Stack Over Flow");
+		}
+		popData = head.data;
+		head = head.next;
+		return popData;
+	}
 }
+

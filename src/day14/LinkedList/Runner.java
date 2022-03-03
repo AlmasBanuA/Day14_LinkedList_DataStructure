@@ -37,5 +37,10 @@ public class Runner {
 		 * Printing linkedList after adding nodes
 		 */
 		list.print();
+		System.out.println("First element is deleted");
+		int pop = list.popAtFirst();
+        System.out.println(pop);
+        System.out.println("After Deleting first element");
+        list.print();
 	}
 }

@@ -27,17 +27,22 @@ public class Runner {
 		LinkedList list = new LinkedList();
 
 		/*
-		 * UC8. Ability to insert 40 after 30 to the Linked List sequence of 56->30->70
+		 * UC9. Ability to delete 40 from the Linked List sequence of 56->30->40->70
+		 *		and showing the size of LinkedList is 3
 		 */
 		list.insert(56);
 		list.insert(30);
 		list.insert(70);
 		list.print();
-		/*
-		 * Search LinkedList to get Node with key value 30
-		 */
+
 		list.searchNode(30);
+		/*
+		 * Ability to insert 40 after 30 to the Linked List
+		 */
 		list.insertMid(3, 40);
+		list.print();
+		list.delete(40);
+		list.printSize();
 		list.print();
 
 	}

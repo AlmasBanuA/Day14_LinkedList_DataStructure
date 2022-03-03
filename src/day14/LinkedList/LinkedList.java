@@ -86,4 +86,35 @@ public class LinkedList {
 			tail = newNode;
 		}
 	}
+
+	/*
+	 * creating insertMid method
+	 */
+	public void insertMid(int position, int data) {
+		System.out.println("Added a node with data " + data + " at the position " + position);
+		MyNode newNode = new MyNode(data);
+		/*
+		 * Init the cur and prev nodes to the head
+		 */
+		MyNode cur = this.head;
+		MyNode prev = this.head;
+		/*
+		 * traverse to the end of the list and check positions moved
+		 */
+		while (cur.next != null && --position > 0) {
+			/*
+			 * update the prev and cur references
+			 */
+			prev = cur;
+			cur = cur.next;
+		}
+		/*
+		 * update prev to point to new node
+		 */
+		prev.next = newNode;
+		/*
+		 * & new node to point to current node
+		 */
+		newNode.next = cur;
+	}
 }

@@ -27,11 +27,12 @@ public class Runner {
 		LinkedList list = new LinkedList();
 
 		/*
-		 * UC3. Adding nodes to linkedList by Appending method
+		 * UC4. Ability to insert 30 between 56 and 70
 		 */
-		list.addNode(56);
-		list.addNode(30);
-		list.addNode(70);
+		   list.insert(56);
+	       list.insert(70);
+	       list.insertMid(2, 30);
+	       
 		/*
 		 * Printing linkedList after adding nodes
 		 */

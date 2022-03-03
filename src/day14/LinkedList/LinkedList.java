@@ -2,32 +2,6 @@ package day14.LinkedList;
 
 public class LinkedList {
 
-	/**
-	 * Main method for manipulation linkedList
-	 * 
-	 * @param args - Default Java param (Not used)
-	 */
-	public static void main(String[] args) {
-
-		/*
-		 * PROCEDURE 1. Creating Lined list 2. Adding nodes to linkedList 3. Printing
-		 * linedList after adding nodes 4. Deleting node from start of the linkedlist 5.
-		 * Printing linedList after deleting node from start of the linkedlist 6.
-		 * Deleting node from end of the linkedlist 7. Printing linedList after deleting
-		 * node from end of the linkedlist
-		 */
-
-		/*
-		 * 1. Creating Linked list
-		 */
-		System.out.println("Welcome to LinkedList program");
-		LinkedList list = new LinkedList();
-		list.insert(56);
-		list.insert(30);
-		list.insert(70);
-		list.print();
-	}
-
 	/*
 	 * Represent the head and tail of the linked list
 	 */
@@ -35,10 +9,9 @@ public class LinkedList {
 	public MyNode tail = null;
 
 	/*
-	 * creating addNode method
+	 * creating insert method
 	 */
 	public void insert(int data) {
-
 		/*
 		 * Creating object as newNode
 		 */
@@ -50,7 +23,6 @@ public class LinkedList {
 			head = newNode;
 			tail = newNode;
 		} else {
-
 			/*
 			 * newNode will be added after tail such that tail's next will point to newNode
 			 */
@@ -60,7 +32,7 @@ public class LinkedList {
 	}
 
 	/*
-	 * creating display method
+	 * creating print method
 	 */
 	public void print() {
 		/*
@@ -73,7 +45,6 @@ public class LinkedList {
 		}
 		System.out.println("Nodes of linked list is: ");
 		while (temp != null) {
-
 			/*
 			 * Prints each node by incrementing pointer
 			 */
@@ -82,4 +53,17 @@ public class LinkedList {
 		}
 		System.out.println();
 	}
+
+	/*
+	 * addNode() method here new data is added inFront of data
+	 */
+	public void addNode(int data) {
+		MyNode newNode = new MyNode(data);
+		newNode.next = head;
+		/*
+		 * newNode will be added before head such that head next will point to newNode
+		 */
+		head = newNode;
+	}
+
 }

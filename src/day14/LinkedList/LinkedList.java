@@ -236,6 +236,7 @@ public class LinkedList {
 	/**
 	 * creating print method to print the data
 	 */
+	
 	public void print() {
 		/*
 		 * Node current will point to head

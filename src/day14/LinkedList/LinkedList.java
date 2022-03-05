@@ -8,8 +8,10 @@ public class LinkedList {
 	public MyNode head = null;
 	public MyNode tail = null;
 
-	/*
-	 * creating insert method
+	/**
+	 * creating insert method to insert data into linked list
+	 * 
+	 * @param data- data to be inserted in to the linked list
 	 */
 	public void insert(int data) {
 		/*
@@ -31,8 +33,12 @@ public class LinkedList {
 		}
 	}
 
-	/*
-	 * addNode() method here new data is added inFront of data
+	/**
+	 * creating addNode method to adding new data into linked list
+	 * 
+	 * addNode() method here new data is added inFront of previous data
+	 * 
+	 * @param data- data to be added in to the linked list
 	 */
 	public void addNode(int data) {
 		MyNode newNode = new MyNode(data);
@@ -43,8 +49,10 @@ public class LinkedList {
 		head = newNode;
 	}
 
-	/*
-	 * creating append method
+	/**
+	 * creating append method to add node at end
+	 * 
+	 * @param data-data to be added at last
 	 */
 	public void appendNode(int data) {
 		MyNode newNode = new MyNode(data);
@@ -64,8 +72,11 @@ public class LinkedList {
 		}
 	}
 
-	/*
-	 * creating insertMid method
+	/**
+	 * creating insertMid method -to insert the node at middle
+	 * 
+	 * @param position -shows position of the node
+	 * @param data -here we are passing the data
 	 */
 	public void insertMid(int position, int data) {
 		System.out.println("Added a node with data " + data + " at the position " + position);
@@ -95,8 +106,10 @@ public class LinkedList {
 		newNode.next = cur;
 	}
 
-	/*
-	 * Creating popAtFirst() delete the first element of the linked list
+	/**
+	 * Creating popAtFirst() method to delete the first element of the linked list
+	 * 
+	 * @return -new head which is next to the previous head
 	 */
 	public int popAtFirst() {
 		int popData = 0;
@@ -108,8 +121,10 @@ public class LinkedList {
 		return popData;
 	}
 
-	/*
+	/**
 	 * Creating popAtLast() to delete the last element of the linked list
+	 * 
+	 * @return -after deleting last element return will points to zero
 	 */
 	public int popAtLast() {
 		System.out.println("Deleting last element of data from the list");
@@ -127,8 +142,10 @@ public class LinkedList {
 		return 0;
 	}
 
-	/*
-	 * Creating SearchNode() to find the element
+	/**
+	 * Creating SearchNode() method to search the element
+	 * 
+	 * @param data -here we pass the data
 	 */
 	public void searchNode(int data) {
 		MyNode current = head;
@@ -152,8 +169,10 @@ public class LinkedList {
 			System.out.println("Element is not present in the list");
 	}
 
-	/*
-	 * Creating deleteElement using
+	/**
+	 * Creating delete method for deleting of specified node from linked list
+	 * 
+	 * @param data -passing the data
 	 */
 	public void delete(int data) {
 		System.out.println("deleting a node with data " + data + "");
@@ -181,14 +200,16 @@ public class LinkedList {
 			System.out.println("The data " + data + " could not be found in the List");
 		}
 	}
-
+        /**
+	 * printSize Method to display the size of the LinkedList
+	 */
 	public void printSize() {
 		int count = 3;
 		System.out.println("size of list: " + count);
 	}
 
-	/*
-	 * Creating sortedList()
+	/**
+	 * Creating sortedList() method to sort the elements in ascending order
 	 */
 	public void sortedList() {
 		MyNode current = head, index = null;
@@ -212,8 +233,8 @@ public class LinkedList {
 		}
 	}
 
-	/*
-	 * creating print method
+	/**
+	 * creating print method to print the data
 	 */
 	public void print() {
 		/*
